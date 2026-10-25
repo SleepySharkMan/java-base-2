@@ -40,9 +40,9 @@ public class App {
         Visitor v3 = new Visitor();
         System.out.println(Visitor.getTotalVisitors());
         Visitor v4 = new Visitor();
-        System.out.println(Visitor.getTotalVisitors());
+        System.out.println(v4.getTotalVisitors());
         Visitor v5 = new Visitor();
-        System.out.println(Visitor.getTotalVisitors());
+        System.out.println(v5.getTotalVisitors());
         // переменная статичная - значит она принадлежит классу, а не экземпляру этого
         // класса,
         // поэтому значение одинаковое если вызвать getTotalVisitors() через любой из
