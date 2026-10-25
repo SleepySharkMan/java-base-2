@@ -32,8 +32,8 @@ public class Cart {
         }
     }
 
-    public int getTotalPrice() {
-        int totalPrice = 0;
+    public double getTotalPrice() {
+        double totalPrice = 0;
         for (Map.Entry<Product, Integer> product : products.entrySet()) {
             totalPrice += product.getKey().getPrice() * product.getValue();
         }

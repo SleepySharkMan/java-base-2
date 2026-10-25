@@ -5,7 +5,7 @@ public class Visitor {
         totalVisitors += 1;
     }
 
-    public int getTotalVisitors() {
+    public static int getTotalVisitors() {
         return totalVisitors;
     }
 }

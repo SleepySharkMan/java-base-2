@@ -2,8 +2,10 @@ public class App {
     public static void main(String[] args) {
         System.out.println("Задача №1");
         BankAccount bankAccount = new BankAccount();
+        bankAccount.setOwnerName("Ivan Ivanov");
         bankAccount.setBalance(1000);
         bankAccount.setBalance(-500);
+        System.out.println(bankAccount.getOwnerName());
         System.out.println(bankAccount.getBalance());
         System.out.println();
 
@@ -16,23 +18,31 @@ public class App {
         tPerson.introduce();
         System.out.println();
 
+        /*  Старый вариант решения задачи №1
+        https://github.com/SleepySharkMan/java-base/blob/main/src/App.java
+        System.out.println("Задача №1");
+        Person person = new Person("Ivan", "Ivanov", 10);
+        person.introduce();
+        System.out.println();
+        */
+
         System.out.println("Задача №3");
         System.out.println(MathHelper.sum(10, 5));
         System.out.println(MathHelper.max(10, 5));
-        System.out.println(MathHelper.isEven(10));
+        System.out.println(MathHelper.isEven(0));
         System.out.println();
 
         System.out.println("Задача №4");
         Visitor v1 = new Visitor();
-        System.out.println(v1.getTotalVisitors());
+        System.out.println(Visitor.getTotalVisitors());
         Visitor v2 = new Visitor();
-        System.out.println(v2.getTotalVisitors());
+        System.out.println(Visitor.getTotalVisitors());
         Visitor v3 = new Visitor();
-        System.out.println(v3.getTotalVisitors());
+        System.out.println(Visitor.getTotalVisitors());
         Visitor v4 = new Visitor();
-        System.out.println(v4.getTotalVisitors());
+        System.out.println(Visitor.getTotalVisitors());
         Visitor v5 = new Visitor();
-        System.out.println(v5.getTotalVisitors());
+        System.out.println(Visitor.getTotalVisitors());
         // переменная статичная - значит она принадлежит классу, а не экземпляру этого
         // класса,
         // поэтому значение одинаковое если вызвать getTotalVisitors() через любой из
